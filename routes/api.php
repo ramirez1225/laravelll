@@ -18,8 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+////mostrar los articulos y su comentarioo
 Route::get('articulos/comentarios','lider\mycontroller@rex');
-////regresa el articulo y su comentario
+
+
+////regresa el articulo y su comentario por id
 Route::get('articulos/{Id}/comentarios','lider\mycontroller@soso');
 
 ////mostrar registros de las tablas con su id o mostrar todos los registros
