@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-////mostrar los articulos y su comentarioo
+/////mostrar los articulos y su comentarioo
 Route::get('articulos/comentarios','lider\mycontroller@rex');
 
 
